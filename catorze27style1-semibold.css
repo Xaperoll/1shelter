@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Catorze27Style1-SemiBold';
+	src: url('fonts/catorze27style1-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/catorze27style1-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/catorze27style1-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/catorze27style1-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/catorze27style1-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/catorze27style1-semibold.svg#catorze27style1-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

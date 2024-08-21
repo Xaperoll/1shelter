@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="posteretro.css">
+	<link rel="stylesheet" type="text/css" href="catorze27style1-semibold.css">
+	<link rel="stylesheet" type="text/css" href="main.css?v=0.1">
+	<title>S.H.E.L.T.E.R The Fallen - Главная</title>
+</head>
+<body>
+
+<div class="welcome">
+	
+	<div class="game-name">S.H.E.L.T.E.R<br>The Fallen</div>
+
+	<div class="button-panel">
+		
+		<div class="button" onclick="goTo('div.create')">Создать</div>
+		<div class="button-outline" onclick="goTo('div.connect')">Присоедениться</div>
+
+	</div>
+
+</div>
+
+<div class="create">
+	
+	<div class="panel-name">Создать</div>
+
+	<div class="select-users">
+		
+		<div class="number-players">Кол-во игроков 4</div>
+		<input type="range" value="4" min="4" max="16" oninput="setPlayerMax(this)">
+
+	</div>
+
+	<div class="button-panel">
+		<div class="button-small" onclick="createGame()">Далее</div>
+		<div class="button-outline-small" onclick="goTo('div.welcome')">Назад</div>
+	</div>
+
+</div>
+
+<div class="connect">
+	
+	<div class="panel-name">Подключиться</div>
+
+	<div class="select-code">
+		
+		<div class="number-players">Кол-во игроков 4</div>
+		<input type="range" value="4" min="4" max="16" oninput="setPlayerMax(this)">
+		<br><br>
+		<div class="room-code">Введённый код 000</div>
+		<input type="range" value="0" min="0" max="9" oninput="setCode()">
+		<br><br>
+		<input type="range" value="0" min="0" max="9" oninput="setCode()">
+		<br><br>
+		<input type="range" value="0" min="0" max="9" oninput="setCode()">
+
+	</div>
+
+	<div class="button-panel">
+		<div class="button-small" onclick="connect()">Далее</div>
+		<div class="button-outline-small" onclick="goTo('div.welcome')">Назад</div>
+	</div>
+
+</div>
+
+<div class="end-window"></div>
+
+<script type="text/javascript" src="main.js?v=0.1"></script>
+</body>
+</html>
